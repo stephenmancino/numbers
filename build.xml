@@ -8,6 +8,7 @@
       </fileset>
    </path>
    <target name="init">
+   	<echo>Beginning to build the Numbers project</echo>
       <mkdir dir="bin"/>
       <mkdir dir="report"/>
    </target>
