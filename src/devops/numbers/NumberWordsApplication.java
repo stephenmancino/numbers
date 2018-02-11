@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 public final class NumberWordsApplication {
 	private final NumberWords numberWords ;
 	private final BufferedReader reader ;
@@ -29,6 +30,10 @@ public final class NumberWordsApplication {
 
 	public static void main(String[] args) {
 		new NumberWordsApplication().execute() ;
+	}
+
+	public NumberWords getNumberWords() {
+		return numberWords;
 	}
 
 }
