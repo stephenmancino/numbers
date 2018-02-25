@@ -20,7 +20,19 @@ public final class NumberWordsApplication {
 				System.out.print( "Enter number (0 to exit): " ) ;
 				String value = reader.readLine() ;
 				int number = Integer.parseInt( value ) ;
-				System.out.println(number);
+				String wordNum = numberWords.toWords(number);
+				
+				
+				if(wordNum=="exit") {
+					System.out.println( "Exiting the application, thanks for trying out the program!" ) ;
+					reader.close();			
+					System.exit(0);
+				}else {
+				
+					System.out.println(wordNum);
+				
+				}
+					
 				
 			} catch ( NumberFormatException | IOException e ) {
 				System.out.println( "Invalid number" ) ;

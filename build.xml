@@ -48,4 +48,7 @@
       <delete dir="report"/>
       <delete file="${jar}"/>
    </target>
+	<target name="run">
+		<java jar="${jar}" fork="true"/>
+		</target>
 </project>

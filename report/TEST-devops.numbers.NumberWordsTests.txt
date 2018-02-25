@@ -1,7 +1,13 @@
 Testsuite: devops.numbers.NumberWordsTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec
 
+Testcase: numberInTeens took 0 sec
+Testcase: numberInOneHundredTeens took 0 sec
+Testcase: numberLessThan10 took 0.078 sec
 Testcase: numberOutOfLowerRangeReturnsError took 0 sec
 Testcase: numberZeroExit took 0 sec
+Testcase: numberLessThan100 took 0 sec
+Testcase: numberGreaterThan100 took 0 sec
 Testcase: numberOutOfUpperRangeReturnsError took 0 sec
+Testcase: trimHyphenWhenATenMultiple took 0 sec
 Testcase: numberInRangeReturnsText took 0 sec

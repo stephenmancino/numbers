@@ -14,7 +14,7 @@ public class NumberWordsTests {
 
 	@Test
 	public void numberZeroExit() {
-		Assert.assertEquals( "exit", "0", numberWords.toWords( 0 ) ) ;
+		Assert.assertEquals( "exit", "exit", numberWords.toWords( 0 ) ) ;
 	}
 	
 	@Test
@@ -29,9 +29,37 @@ public class NumberWordsTests {
 	
 	@Test
 	public void numberInRangeReturnsText() {
-		Assert.assertEquals("twenty two", "22",numberWords.toWords(22));
+		Assert.assertEquals("Number in Range", "twenty-two",numberWords.toWords(22));
 	}
 	
-    
+	@Test
+	public void numberLessThan10() {
+		Assert.assertEquals("Less than 10", "eight",numberWords.toWords(8));
+	}
 	
+	@Test
+	public void numberInTeens() {
+		Assert.assertEquals("Teens", "eighteen",numberWords.toWords(18));
+	}
+	
+	@Test
+	public void trimHyphenWhenATenMultiple() {
+		Assert.assertEquals("HyphenTrim", "eight hundred-eighty",numberWords.toWords(880));
+	}
+	
+	@Test
+	public void numberInOneHundredTeens() {
+		Assert.assertEquals("OneHundredTeens", "one hundred-eighteen",numberWords.toWords(118));
+	}
+	
+	@Test
+	public void numberLessThan100() {
+		Assert.assertEquals("Less than 100", "eighty-eight",numberWords.toWords(88));
+	}
+	
+	
+	@Test
+	public void numberGreaterThan100() {
+		Assert.assertEquals("Greater than 100", "eight hundred-eighty-eight",numberWords.toWords(888));
+	}
 }
